@@ -1,32 +1,33 @@
 alert("Hello, do you want to find out your Chinese zodiac?");
 
 const userInput = Number(prompt("What year were you born?"));
+const chineseZodiacCalculation = (userInput - 4) % 12;
 
 if (Number.isNaN(userInput) || userInput === 0) {
     console.log("Bad input!");
-} else if ((userInput - 4) % 12 === 0) {
+} else if (chineseZodiacCalculation === 0) {
     console.log("Your Chinese zodiac sign is Rat");
-} else if ((userInput - 4) % 12 === 1) {
+} else if (chineseZodiacCalculation === 1) {
     console.log("Your Chinese zodiac sign is Ox");
-} else if ((userInput - 4) % 12 === 2) {
+} else if (chineseZodiacCalculation === 2) {
     console.log("Your Chinese zodiac sign is Tiger");
-} else if ((userInput - 4) % 12 === 3) {
+} else if (chineseZodiacCalculation === 3) {
     console.log("Your Chinese zodiac sign is Rabbit");
-} else if ((userInput - 4) % 12 === 4) {
+} else if (chineseZodiacCalculation === 4) {
     console.log("Your Chinese zodiac sign is Dragon");
-} else if ((userInput - 4) % 12 === 5) {
+} else if (chineseZodiacCalculation === 5) {
     console.log("Your Chinese zodiac sign is Snake");
-} else if ((userInput - 4) % 12 === 6) {
+} else if (chineseZodiacCalculation === 6) {
     console.log("Your Chinese zodiac sign is Horse");
-} else if ((userInput - 4) % 12 === 7) {
+} else if (chineseZodiacCalculation === 7) {
     console.log("Your Chinese zodiac sign is Goat");
-} else if ((userInput - 4) % 12 === 8) {
+} else if (chineseZodiacCalculation === 8) {
     console.log("Your Chinese zodiac sign is Monkey");
-} else if ((userInput - 4) % 12 === 9) {
+} else if (chineseZodiacCalculation === 9) {
     console.log("Your Chinese zodiac sign is Rooster");
-} else if ((userInput - 4) % 12 === 10) {
+} else if (chineseZodiacCalculation === 10) {
     console.log("Your Chinese zodiac sign is Dog");
-} else if ((userInput - 4) % 12 === 11) {
+} else if (chineseZodiacCalculation === 11) {
     console.log("Your Chinese zodiac sign is Pig");
 } else
     console.log("Bad input!");
