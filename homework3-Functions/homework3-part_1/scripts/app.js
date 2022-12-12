@@ -1,10 +1,10 @@
-function typesOfParametars (parametarExample) {
+function typesOfParameters (parametarExample) {
     return console.log (typeof(parametarExample))
 }
 
 
-typesOfParametars(null);
-typesOfParametars(3 === "number");
-typesOfParametars(3);
-typesOfParametars("Filip");
-typesOfParametars();
+typesOfParameters(null);
+typesOfParameters(3 === "number");
+typesOfParameters(3);
+typesOfParameters("Filip");
+typesOfParameters();
