@@ -7,13 +7,13 @@ function atmMoneyWithdraw(withdrawAmount) {
         return "Invalid Input!";
     }
     else if (withdrawAmount > moneyAvailable) {
-        return "Not enough money";
+        return "Not enough money.";
     }
     let moneyLeft = moneyAvailable - withdrawAmount;
-    return [`You have withdrawn ${withdrawAmount} and you have ${moneyLeft} left on the account`]
+    return `You have withdrawn ${withdrawAmount} and you have ${moneyLeft} "left on the account.`
 }
 
-console.log(atmMoneyWithdraw())
+console.log(atmMoneyWithdraw(5000))
 
 // Working with prompt
 
@@ -25,10 +25,10 @@ function atmMoneyWithdraw() {
         return "Invalid Input!";
     }
     else if (convertedWithdrawAmount > moneyAvailable) {
-        return "Not enough money";
+        return "Not enough money.";
     }
     let moneyLeft = moneyAvailable - convertedWithdrawAmount;
-    return [`You have withdrawn ${convertedWithdrawAmount} and you have ${moneyLeft} left on the account`]
+    return `You have withdrawn ${convertedWithdrawAmount} and you have ${moneyLeft} left on the account.`
 }
 
 console.log(atmMoneyWithdraw())

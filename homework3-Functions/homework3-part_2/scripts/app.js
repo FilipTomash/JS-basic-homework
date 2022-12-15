@@ -4,10 +4,10 @@ function dogAgeCalculator(yearsTheDogHas) {
         typeof yearsTheDogHas !== "number" ||
         yearsTheDogHas === 0
     ) {
-        return console.log("Invalid input!");
+        return "Invalid input!";
     }
     let ageInHumanYears = yearsTheDogHas * 7;
-    return console.log (ageInHumanYears);
+    return ageInHumanYears;
 }
 
-dogAgeCalculator(1);
+console.log (dogAgeCalculator(12));
