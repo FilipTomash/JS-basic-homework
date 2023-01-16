@@ -1,0 +1,23 @@
+main {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.myTable{
+    padding-top: 20px;
+}
+
+#table{
+    background-color: lightseagreen;
+}
+
+.tableInputs{
+    display: flex;
+    justify-content: center;
+}
+
+#table td{
+    padding: 8px;
+    border: solid 2px black;
+}
